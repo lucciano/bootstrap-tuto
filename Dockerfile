@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 #Install git
-RUN apt-get update && pt-get install -yq git && apt-get clean
+RUN apt-get update && apt-get install -yq git make curl && apt-get clean
 
 #Install n https://github.com/tj/n
 RUN git clone https://github.com/tj/n /opt/n && cd /opt/n && make install

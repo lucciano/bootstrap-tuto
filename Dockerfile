@@ -13,3 +13,8 @@ RUN n latest
 
 #Install Grunt http://gruntjs.com/
 RUN npm install -g grunt-cli
+
+#Install bower
+RUN npm install -g bower
+
+
